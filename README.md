@@ -1,9 +1,8 @@
 # Resume
 
-Latest version:
+PDF:
+[Resume.pdf](Resume.pdf)
 
+Preview:
 ![Resume Preview](Resume.png)
 
-Download the PDF:
-
-[resume.pdf](Resume.pdf)
