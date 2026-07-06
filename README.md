@@ -6,4 +6,4 @@ Latest version:
 
 Download the PDF:
 
-[resume.pdf](output/resume.pdf)
+[resume.pdf](resume.pdf)
