@@ -2,8 +2,8 @@
 
 Latest version:
 
-![Resume Preview](output/resume.png)
+![Resume Preview](output/Resume.png)
 
 Download the PDF:
 
-[resume.pdf](resume.pdf)
+[resume.pdf](Resume.pdf)
