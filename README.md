@@ -2,7 +2,7 @@
 
 Latest version:
 
-![Resume Preview](output/Resume.png)
+![Resume Preview](Resume.png)
 
 Download the PDF:
 
