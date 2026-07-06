@@ -1,0 +1,43 @@
+name: Build Resume Png
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "Resume.typ"
+      - "template.typ"
+      - ".github/workflows/build.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Typst
+        uses: typst-community/setup-typst@v3
+
+      - name: Build resume
+        run: |
+          typst compile Resume.typ 
+          typst compile --format png Resume.typ
+
+      - name: Commit generated files
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add output/
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update generated resume [skip ci]"
+            git push
+          fi
