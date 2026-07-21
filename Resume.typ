@@ -29,7 +29,7 @@
     "Hanover, NH",
     "Bachelor of Arts (B.A.) in Computer Science modified with Engineering Science",
     "Bachelor of Engineering (B.E.) in Computer Engineering", // degree
-    "3.5/40",
+    "3.5/4.0",
     datetime(year: 2022, month: 8, day: 1), // start-date
     datetime(year: 2026, month: 6, day: 1), // end-date
   )[
